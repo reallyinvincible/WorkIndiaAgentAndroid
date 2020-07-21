@@ -81,10 +81,10 @@ class HomeActivity : BaseActivity() {
             })
     }
 
-   /* @SuppressLint("CheckResult")
-    fun createTask() {
+    @SuppressLint("CheckResult")
+    fun createTask(createTaskRequest: CreateTaskRequest) {
         showProgressDialog()
-        taskApi.createTask("sparsh", CreateTaskRequest(title, regNo, cgpa))
+        taskApi.createTask("sparsh", createTaskRequest)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
@@ -92,12 +92,12 @@ class HomeActivity : BaseActivity() {
                     EventBus.getDefault().post(it.message)
                 }
                 hideProgressDialog()
-                loadUsers()
+                loadTasks()
             }, {
                 hideProgressDialog()
                 EventBus.getDefault().post(it)
             })
-    }*/
+    }
 
    /* @SuppressLint("CheckResult")
     fun updateUser(
