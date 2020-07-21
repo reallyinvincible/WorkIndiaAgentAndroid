@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.exuberant.workindia.R
 import com.exuberant.workindia.data.model.Task
-import com.exuberant.workindia.data.network.request.CreateTaskRequest
 import com.exuberant.workindia.ui.home.HomeActivity
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.bottomsheet_modify_user.*
@@ -43,11 +42,11 @@ class ModifyUserBottomSheet(val task: Task) : BottomSheetDialogFragment() {
     }
 
     private fun initialize() {
-        btn_modify_user_option.setOnClickListener {
+        btn_modify_task_option.setOnClickListener {
             ll_button_container.visibility = View.GONE
             ll_modify_user_layout.visibility = View.VISIBLE
         }
-        btn_delete_user_option.setOnClickListener {
+        btn_delete_task_option.setOnClickListener {
             //homeActivity.deleteUser(task.taskId)
             dismiss()
         }

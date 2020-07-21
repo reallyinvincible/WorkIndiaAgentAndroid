@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <TextView
             android:id="@+id/tv_title"
@@ -145,7 +145,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_modify_user_option"
+            android:id="@+id/btn_modify_task_option"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="64dp"
@@ -166,7 +166,7 @@
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_delete_user_option"
+            android:id="@+id/btn_delete_task_option"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="64dp"
